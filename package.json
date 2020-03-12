@@ -1,5 +1,6 @@
 {
-  "name": "my-gridsome-site",
+  "name": "Lukas Figura",
+  "description": "My career website",
   "private": true,
   "scripts": {
     "build": "gridsome build",
