@@ -4,6 +4,9 @@
     <option name="eslintRcFile" value=".eslintrc.js" />
     <option name="eslintExecutable" value="$PROJECT_DIR$/node_modules/.bin/eslint" />
     <option name="nodeInterpreter" value="/usr/local/bin/node" />
+    <option name="treatAllEslintIssuesAsWarnings" value="true" />
     <option name="pluginEnabled" value="true" />
+    <option name="autoFix" value="true" />
+    <option name="reportUnused" value="true" />
   </component>
 </project>

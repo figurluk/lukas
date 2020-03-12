@@ -21,7 +21,7 @@ query {
 }
 </static-query>
 
-<style>
+<style lang="postcss" scoped>
 body {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   margin:0;
