@@ -9,6 +9,7 @@
     <div class="w-full flex flex-wrap text-gray-700 justify-start pb-4 px-8">
       <technology
         class="mx-4 w-16 mb-4 h-16 lg:w-24 lg:h-24 sm:32 flex flex-col"
+        favorite
         alt="Nuxt"
       >
         <g-image
@@ -20,6 +21,7 @@
       <technology
         class="mx-4 w-16 mb-4 h-16 lg:w-24 lg:h-24 sm:32 flex flex-col"
         alt="VueJS"
+        favorite
       >
         <g-image
           class="mx-auto"
@@ -40,6 +42,7 @@
       <technology
         class="mx-4 w-16 mb-4 h-16 lg:w-24 lg:h-24 sm:32 flex flex-col"
         alt="Tailwind"
+        favorite
       >
         <g-image
           class="mx-auto"
@@ -70,6 +73,7 @@
       <technology
         class="mx-4 w-16 mb-4 h-16 lg:w-24 lg:h-24 sm:32 flex flex-col"
         alt="Laravel"
+        favorite
       >
         <g-image
           class="mx-auto p-4"
@@ -110,6 +114,7 @@
       <technology
         class="mx-4 w-16 mb-4 h-16 lg:w-24 lg:h-24 sm:32 flex flex-col"
         alt="GraphQL"
+        favorite
       >
         <g-image
           class="mx-auto"
@@ -218,6 +223,7 @@
       <technology
         class="mx-4 w-16 mb-4 h-16 lg:w-24 lg:h-24 sm:32 flex flex-col"
         alt="Go"
+        favorite
       >
         <g-image
           class="mx-auto"

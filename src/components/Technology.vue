@@ -1,8 +1,16 @@
 <template>
   <div class="technology__container">
+    <span
+      v-if="favorite"
+      class="text-gray-300 absolute right-2 top-2 fas fa-heart"
+    />
     <slot />
 
-    <div class="technology__label opacity-100 md:opacity-0 text-sm md:text-base">{{ alt }}</div>
+    <div
+      class="technology__label opacity-100 md:opacity-0 text-sm md:text-base"
+    >
+      {{ alt }}
+    </div>
   </div>
 </template>
 
@@ -14,6 +22,10 @@ export default {
     alt: {
       type: String,
       required: true
+    },
+    favorite: {
+      type: Boolean,
+      default: false
     }
   }
 }
@@ -24,6 +36,10 @@ export default {
   @apply text-gray-600 text-center mt-auto;
   transition: opacity 200ms ease-in-out;
   will-change: opacity;
+}
+
+.technology__container {
+  @apply .relative;
 }
 
 .technology__container:hover .technology__label {
