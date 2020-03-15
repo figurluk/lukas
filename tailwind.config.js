@@ -20,6 +20,10 @@ module.exports = {
         '48': '12rem'
       },
 
+      maxHeight: {
+        '128': '32rem'
+      },
+
       opacity: {
         5: '0.05'
       }
