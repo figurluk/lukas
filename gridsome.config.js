@@ -31,11 +31,11 @@ module.exports = {
         serviceWorkerPath: 'service-worker.js',
         cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
         shortName: 'Lukas',
-        themeColor: '#666600',
+        themeColor: '#68d391',
         backgroundColor: '#ffffff',
         icon: 'src/favicon.png',
         msTileImage: '',
-        msTileColor: '#666600'
+        msTileColor: '#68d391'
       }
     }
   ]
