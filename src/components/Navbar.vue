@@ -1,5 +1,5 @@
-<template functional>
-  <div class="w-full flex py-4" :class="data.staticClass">
+<template>
+  <div class="w-full flex py-4">
     <nav class="nav">
       <g-link class="nav__link" to="/#about">About</g-link>
       <g-link class="nav__link" to="/#career">Career</g-link>

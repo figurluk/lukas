@@ -1,6 +1,7 @@
 {
   "name": "lukasfigura",
   "description": "My career website",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "build": "gridsome build",

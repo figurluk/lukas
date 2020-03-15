@@ -1,6 +1,6 @@
-<template functional>
-  <div :class="data.staticClass" class="heading-container">
-    <h2 class="heading" :data-before-content="props.infoChar"><slot /></h2>
+<template>
+  <div class="heading-container">
+    <h2 class="heading" :data-before-content="infoChar"><slot /></h2>
   </div>
 </template>
 

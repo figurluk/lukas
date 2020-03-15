@@ -1,162 +1,106 @@
-<template functional>
-  <section
-    id="expertise"
-    class="w-full flex flex-col py-8"
-    :class="data.staticClass"
-  >
+<template>
+  <section id="expertise" class="w-full flex flex-col py-8">
     <div class="w-full flex mb-4">
       <heading class="mx-auto text-3xl">
         Expertise
       </heading>
     </div>
     <div class="w-full flex flex-wrap text-gray-700 justify-between pb-4">
-      <component
-        :is="injections.components.Technology"
-        class="mr-8 w-24 flex flex-col"
-        alt="Nuxt"
-      >
+      <technology class="mr-8 w-24 flex flex-col" alt="Nuxt">
         <g-image
           class="mx-auto"
           :alt="'Nuxt logo'"
           src="../assets/images/technologies/nuxt-logo.svg"
         />
-      </component>
-      <component
-        :is="injections.components.Technology"
-        class="mr-8 w-24 flex flex-col"
-        alt="VueJS"
-      >
+      </technology>
+      <technology class="mr-8 w-24 flex flex-col" alt="VueJS">
         <g-image
           class="mx-auto"
           :alt="'VueJS logo'"
           src="../assets/images/technologies/vue-logo.svg"
         />
-      </component>
-      <component
-        :is="injections.components.Technology"
-        class="mr-8 w-24 flex flex-col pt-4"
-        alt="Angular"
-      >
+      </technology>
+      <technology class="mr-8 w-24 flex flex-col pt-4" alt="Angular">
         <g-image
           class="mx-auto"
           :alt="'Angular logo'"
           src="../assets/images/technologies/angular-logo.svg"
         />
-      </component>
-      <component
-        :is="injections.components.Technology"
-        class="mr-8 w-24 flex flex-col"
-        alt="Cypress"
-      >
+      </technology>
+      <technology class="mr-8 w-24 flex flex-col" alt="Cypress">
         <g-image
           class="mx-auto"
           :alt="'Cypress logo'"
           src="../assets/images/technologies/cypress-logo.svg"
         />
-      </component>
-      <component
-        :is="injections.components.Technology"
-        class="mr-8 w-24 flex flex-col"
-        alt="Jest"
-      >
+      </technology>
+      <technology class="mr-8 w-24 flex flex-col" alt="Jest">
         <g-image
           class="mx-auto"
           :alt="'Jest logo'"
           src="../assets/images/technologies/jest-logo.svg"
         />
-      </component>
-      <component
-        :is="injections.components.Technology"
-        class="mr-8 w-24 flex flex-col"
-        alt="NodeJS"
-      >
+      </technology>
+      <technology class="mr-8 w-24 flex flex-col" alt="NodeJS">
         <g-image
           class="mx-auto"
           :alt="'NodeJS logo'"
           src="../assets/images/technologies/nodejs-logo.svg"
         />
-      </component>
+      </technology>
     </div>
     <div class="w-full flex flex-wrap text-gray-700 justify-between pb-4">
-      <component
-        :is="injections.components.Technology"
-        class="mr-8 w-24 flex flex-col"
-        alt="GraphQL"
-      >
+      <technology class="mr-8 w-24 flex flex-col" alt="GraphQL">
         <g-image
           class="mx-auto"
           :alt="'GraphQL logo'"
           src="../assets/images/technologies/graphql-logo.svg"
         />
-      </component>
-      <component
-        :is="injections.components.Technology"
-        class="mr-8 w-24 flex flex-col"
-        alt="Laravel"
-      >
+      </technology>
+      <technology class="mr-8 w-24 flex flex-col" alt="Laravel">
         <g-image
           class="mx-auto"
           :alt="'Laravel logo'"
           src="../assets/images/technologies/laravel-logo-light.svg"
         />
-      </component>
-      <component
-        :is="injections.components.Technology"
-        class="mr-8 w-24 flex flex-col"
-        alt="Java"
-      >
+      </technology>
+      <technology class="mr-8 w-24 flex flex-col" alt="Java">
         <g-image
           class="mx-auto"
           :alt="'Java logo'"
           src="../assets/images/technologies/golang.svg"
         />
-      </component>
-      <component
-        :is="injections.components.Technology"
-        class="mr-8 w-24 flex flex-col"
-        alt="Netlify"
-      >
+      </technology>
+      <technology class="mr-8 w-24 flex flex-col" alt="Netlify">
         <g-image
           class="mx-auto"
           :alt="'Netlify logo'"
           src="../assets/images/technologies/netlify-logo.svg"
         />
-      </component>
-      <component
-        :is="injections.components.Technology"
-        class="mr-8 w-24 flex flex-col"
-        alt="Jira"
-      >
+      </technology>
+      <technology class="mr-8 w-24 flex flex-col" alt="Jira">
         <g-image
           class="mx-auto"
           :alt="'Jira logo'"
           src="../assets/images/technologies/jira-logo.svg"
         />
-      </component>
-      <component
-        :is="injections.components.Technology"
-        class="mr-8 w-24 flex flex-col"
-        alt="Trello"
-      >
+      </technology>
+      <technology class="mr-8 w-24 flex flex-col" alt="Trello">
         <g-image
           class="mx-auto"
           :alt="'Trello logo'"
           src="../assets/images/technologies/trello-light.svg"
         />
-      </component>
+      </technology>
     </div>
   </section>
 </template>
 
 <script>
+import Technology from './Technology'
 export default {
   name: 'Expertise',
-
-  inject: {
-    components: {
-      default: { Technology: () => import('./Technology') }
-    }
-  }
+  components: { Technology }
 }
 </script>
 

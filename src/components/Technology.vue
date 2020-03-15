@@ -1,8 +1,8 @@
-<template functional>
-  <div :class="data.staticClass" class="technology__container">
+<template>
+  <div class="technology__container">
     <slot />
 
-    <div class="technology__label">{{ props.alt }}</div>
+    <div class="technology__label">{{ alt }}</div>
   </div>
 </template>
 

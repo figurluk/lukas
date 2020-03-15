@@ -1,5 +1,5 @@
-<template functional>
-  <section id="banner" class="w-full flex" :class="data.staticClass">
+<template>
+  <section id="banner" class="w-full flex">
     <div class="w-1/2 flex py-48">
       <div class="my-auto">
         <p class="text-sm text-gray-500 font-semibold">HELLO</p>
@@ -20,5 +20,3 @@ export default {
   name: 'Banner'
 }
 </script>
-
-<style scoped></style>

@@ -1,28 +1,28 @@
 <template functional>
   <Layout>
-    <component :is="injections.components.Container" class="bg-gray-100">
+    <container class="bg-gray-100">
       <component :is="injections.components.Banner" />
-    </component>
+    </container>
 
-    <component :is="injections.components.Container" class="bg-white">
+    <container class="bg-white">
       <component :is="injections.components.About" />
-    </component>
+    </container>
 
-    <component :is="injections.components.Container" class="bg-gray-100">
+    <container class="bg-gray-100">
       <component :is="injections.components.Career" />
-    </component>
+    </container>
 
-    <component :is="injections.components.Container" class="bg-white">
+    <container class="bg-white">
       <component :is="injections.components.Expertise" />
-    </component>
+    </container>
 
-    <component :is="injections.components.Container" class="bg-gray-100">
+    <container class="bg-gray-100">
       <component :is="injections.components.Contact" />
-    </component>
+    </container>
 
-    <component :is="injections.components.Container" class="bg-gray-100">
+    <container class="bg-gray-100">
       <component :is="injections.components.Footer" />
-    </component>
+    </container>
   </Layout>
 </template>
 
@@ -37,7 +37,6 @@ export default {
         Banner: () => import('../components/Banner'),
         Career: () => import('../components/Career'),
         Contact: () => import('../components/Contact'),
-        Container: () => import('../components/Container'),
         Expertise: () => import('../components/Expertise'),
         Footer: () => import('../components/Footer')
       }
