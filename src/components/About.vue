@@ -1,11 +1,11 @@
 <template>
-  <section id="about" class="w-full flex py-32">
-    <div class="w-1/2 flex pl-8">
+  <section id="about" class="w-full flex flex-wrap py-16 md:py-32">
+    <div class="w-full md:w-1/2 flex pl-8">
       <heading class="my-auto text-5xl" :info-char="'A'">
         About Me
       </heading>
     </div>
-    <div class="w-1/2 text-gray-700">
+    <div class="w-full md:w-1/2 text-gray-700 py-8 px-8">
       <p class="mb-8">
         Product-oriented full-stack engineering lead and technology consultant.
         Experience with the full software life cycle and multitude of

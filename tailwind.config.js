@@ -9,6 +9,17 @@ module.exports = {
         '12xl': '10rem'
       },
 
+      inset: {
+        auto: 'auto',
+        2: '0.5rem',
+        6: '1.5rem',
+        '-2': '-0.5rem'
+      },
+
+      minHeight: {
+        '48': '12rem'
+      },
+
       opacity: {
         5: '0.05'
       }

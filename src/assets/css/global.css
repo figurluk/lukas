@@ -89,3 +89,35 @@ html {
 ::selection {
     @apply bg-green-300;
 }
+
+input, textarea {
+    @apply outline-none border-gray-300 py-2 px-4 rounded-sm border text-lg;
+    transition: 150ms ease-in-out;
+    will-change: border-color;
+}
+
+input.has-error, textarea.has-error {
+    @apply border-red-400;
+}
+
+textarea {
+    min-height: 6rem;
+}
+
+input:focus, textarea:focus,input:active, textarea:active {
+     @apply border-gray-500;
+ }
+
+/* FADE */
+.fade-enter-active {
+    transition: all 0.3s ease;
+}
+
+.fade-leave-active {
+    transition: all 0.15s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}

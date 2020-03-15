@@ -1,17 +1,141 @@
 <template>
-  <section id="contact" class="w-full flex py-32">
-    <div class="w-1/2 flex pl-8">
+  <section id="contact" class="w-full flex flex-wrap py-16 md:py-32">
+    <div class="w-full md:w-1/2 flex pl-8">
       <heading class="my-auto text-5xl" :info-char="'C'">
         Contact Me
       </heading>
     </div>
-    <div class="w-1/2 text-gray-700"></div>
+    <div class="w-full md:w-1/2 text-gray-700 px-8 py-8">
+      <ValidationObserver ref="observer" slim>
+        <form
+          class="flex-col"
+          :name="formName"
+          method="post"
+          data-netlify="true"
+          @submit.prevent="handleSubmit"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" :value="formName" />
+          <p class="hidden">
+            <label> Don’t fill this out: <input name="bot-field" /> </label>
+          </p>
+
+          <transition name="fade">
+            <div
+              class="w-full p-4"
+              v-if="hasMessage"
+              :class="{
+                'error-message': isErrorMsg,
+                'success-message': !isErrorMsg
+              }"
+            >
+              {{ hasMessage }}
+            </div>
+          </transition>
+
+          <form-item name="email" required label="Email">
+            <ValidationProvider
+              tag="div"
+              name="email"
+              class="flex flex-col"
+              rules="required|email"
+              v-slot="{ errors }"
+            >
+              <input
+                class="w-full md:w-2/3"
+                :class="{ 'has-error': errors.length }"
+                type="text"
+                name="email"
+                placeholder="@"
+                v-model="form.email"
+              />
+              <small v-if="errors.length" class="text-red-400 mt-2 normal-case">
+                - {{ errors[0] }}
+              </small>
+            </ValidationProvider>
+          </form-item>
+          <form-item name="message" required label="Message">
+            <ValidationProvider
+              tag="div"
+              name="message"
+              class="flex flex-col"
+              rules="required"
+              v-slot="{ errors }"
+            >
+              <textarea
+                class="w-full md:w-2/3"
+                :class="{ 'has-error': errors.length }"
+                name="message"
+                placeholder="Please place your message here"
+                v-model="form.message"
+              />
+              <small v-if="errors.length" class="text-red-400 mt-2 normal-case">
+                - {{ errors[0] }}
+              </small>
+            </ValidationProvider>
+          </form-item>
+
+          <button class="btn-primary" type="submit">Submit</button>
+        </form>
+      </ValidationObserver>
+    </div>
   </section>
 </template>
 
 <script>
+import FormItem from './FormItem'
 export default {
-  name: 'Contact'
+  name: 'Contact',
+
+  components: { FormItem },
+
+  data: () => ({
+    formName: 'contact-form',
+    hasMessage: null,
+    successMessage: '',
+    errorMessage: '',
+    form: {
+      email: null,
+      message: null
+    }
+  }),
+
+  computed: {
+    isErrorMsg() {
+      return this.hasMessage === this.errorMessage
+    }
+  },
+
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join('&')
+    },
+
+    async handleSubmit() {
+      if (!(await this.$refs.observer.validate())) {
+        return
+      }
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: this.encode({
+          'form-name': this.formName,
+          ...this.formData
+        })
+      })
+        .then(() => {
+          this.hasMessage = this.successMessage
+        })
+        .catch(() => {
+          this.hasMessage = this.errorMessage
+        })
+    }
+  }
 }
 </script>
 

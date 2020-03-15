@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "gridsome": "^0.7.0",
-    "gridsome-plugin-pwa": "^0.0.13"
+    "gridsome-plugin-pwa": "^0.0.13",
+    "vee-validate": "^3.2.5"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",

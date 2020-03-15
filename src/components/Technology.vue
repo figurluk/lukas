@@ -2,7 +2,7 @@
   <div class="technology__container">
     <slot />
 
-    <div class="technology__label">{{ alt }}</div>
+    <div class="technology__label opacity-100 md:opacity-0">{{ alt }}</div>
   </div>
 </template>
 
@@ -21,7 +21,7 @@ export default {
 
 <style lang="postcss" scoped>
 .technology__label {
-  @apply opacity-0 text-gray-600 text-center mt-auto;
+  @apply text-gray-600 text-center mt-auto;
   transition: opacity 200ms ease-in-out;
   will-change: opacity;
 }

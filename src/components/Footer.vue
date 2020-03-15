@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full py-4 text-sm text-gray-600">
+  <footer class="w-full py-4 px-8 text-sm text-gray-600">
     {{ currentYear }} &copy; Lukas Figura
   </footer>
 </template>

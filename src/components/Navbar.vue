@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex py-4">
+  <div class="w-full flex py-4 px-4 md:px-8 md:px-0">
     <nav class="nav">
       <g-link class="nav__link" to="/#about">About</g-link>
       <g-link class="nav__link" to="/#career">Career</g-link>

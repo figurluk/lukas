@@ -1,5 +1,5 @@
 <template>
-  <div class="heading-container">
+  <div class="px-8">
     <h2 class="heading" :data-before-content="infoChar"><slot /></h2>
   </div>
 </template>
@@ -30,6 +30,6 @@ export default {
 }
 
 .heading {
-  @apply font-baloo relative;
+  @apply font-baloo relative pt-12;
 }
 </style>
