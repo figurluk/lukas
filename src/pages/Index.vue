@@ -1,25 +1,49 @@
-<template>
+<template functional>
   <Layout>
+    <component :is="injections.components.Container" class="bg-gray-100">
+      <component :is="injections.components.Banner" />
+    </component>
 
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
+    <component :is="injections.components.Container" class="bg-white">
+      <component :is="injections.components.About" />
+    </component>
 
-    <h1>Hello, world!</h1>
+    <component :is="injections.components.Container" class="bg-gray-100">
+      <component :is="injections.components.Career" />
+    </component>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
+    <component :is="injections.components.Container" class="bg-white">
+      <component :is="injections.components.Expertise" />
+    </component>
 
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
+    <component :is="injections.components.Container" class="bg-gray-100">
+      <component :is="injections.components.Contact" />
+    </component>
 
+    <component :is="injections.components.Container" class="bg-gray-100">
+      <component :is="injections.components.Footer" />
+    </component>
   </Layout>
 </template>
 
 <script>
 export default {
+  name: 'Index',
+
+  inject: {
+    components: {
+      default: {
+        About: () => import('../components/About'),
+        Banner: () => import('../components/Banner'),
+        Career: () => import('../components/Career'),
+        Contact: () => import('../components/Contact'),
+        Container: () => import('../components/Container'),
+        Expertise: () => import('../components/Expertise'),
+        Footer: () => import('../components/Footer')
+      }
+    }
+  },
+
   metaInfo: {
     title: 'Hello, world!'
   }

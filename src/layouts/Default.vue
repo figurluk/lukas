@@ -1,50 +1,35 @@
-<template>
+<template functional>
   <div class="layout">
     <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
-      </nav>
+      <component class="max-w-6xl mx-auto" :is="injections.components.Navbar" />
     </header>
-    <slot/>
+
+    <slot />
   </div>
 </template>
 
-<static-query>
-query {
-  metadata {
-    siteName
+<script>
+import Navbar from '../components/Navbar'
+
+export default {
+  name: 'Default',
+
+  inject: {
+    components: {
+      default: {
+        Navbar
+      }
+    }
   }
 }
-</static-query>
+</script>
 
 <style lang="postcss" scoped>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
-
 .layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  @apply flex flex-col;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
+  @apply flex sticky top-0 bg-gray-100 z-10;
 }
 </style>

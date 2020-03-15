@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="70px" viewBox="0 0 78 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="figma-logo" transform="translate(26.000000, 15.000000)" fill-rule="nonzero">
+            <path d="M6.5,39 C10.088,39 13,36.088 13,32.5 L13,26 L6.5,26 C2.912,26 0,28.912 0,32.5 C0,36.088 2.912,39 6.5,39 Z" id="path0_fill" fill="#0ACF83"></path>
+            <path d="M0,19.5 C0,15.912 2.912,13 6.5,13 L13,13 L13,26 L6.5,26 C2.912,26 0,23.088 0,19.5 Z" id="path1_fill" fill="#A259FF"></path>
+            <path d="M0,6.5 C0,2.912 2.912,0 6.5,0 L13,0 L13,13 L6.5,13 C2.912,13 0,10.088 0,6.5 Z" id="path1_fill_1_" fill="#F24E1E"></path>
+            <path d="M13,0 L19.5,0 C23.088,0 26,2.912 26,6.5 C26,10.088 23.088,13 19.5,13 L13,13 L13,0 Z" id="path2_fill" fill="#FF7262"></path>
+            <path d="M26,19.5 C26,23.088 23.088,26 19.5,26 C15.912,26 13,23.088 13,19.5 C13,15.912 15.912,13 19.5,13 C23.088,13 26,15.912 26,19.5 Z" id="path3_fill" fill="#1ABCFE"></path>
+        </g>
+    </g>
+</svg>

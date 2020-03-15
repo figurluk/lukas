@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="148px" height="148px" viewBox="0 0 148 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>vue-logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tech-VUE" fill-rule="nonzero">
+            <g id="vuejs-seeklogo.com" transform="translate(35.000000, 45.000000)">
+                <polygon id="Shape" fill="#41B883" points="62.4 0 78 0 39 70 0 0 15.405 0 29.835 0 39 16.2318841 47.97 0"></polygon>
+                <polygon id="Shape" fill="#41B883" points="0 0 39 70 78 0 62.4 0 39 42 15.405 0"></polygon>
+                <polygon id="Shape" fill="#35495E" points="15 0 38.5975104 43 62 0 47.5684647 0 38.5975104 16.5384615 29.4315353 0"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

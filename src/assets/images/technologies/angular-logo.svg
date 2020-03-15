@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="70px" viewBox="0 0 78 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="angular-logo" transform="translate(19.000000, 13.000000)" fill-rule="nonzero">
+            <polygon id="Path" fill="#DD0031" points="19.5 0 19.5 0 19.5 0 0 7.304 2.97422127 34.386 19.5 44 19.5 44 19.5 44 36.0257788 34.386 39 7.304"></polygon>
+            <polygon id="Path" fill="#C3002F" points="19 0 19 4.884 19 4.862 19 27.148 19 27.148 19 44 19 44 35.9495167 34.386 39 7.304"></polygon>
+            <path d="M20.0206541,5 L8,34 L8,34 L12.4819277,34 L12.4819277,34 L14.898451,27.5111111 L25.101549,27.5111111 L27.5180723,34 L27.5180723,34 L32,34 L32,34 L20.0206541,5 L20.0206541,5 L20.0206541,5 L20.0206541,5 L20.0206541,5 Z M23.6734694,23.6428571 L16.8163265,23.6428571 L20.244898,14.3214286 L23.6734694,23.6428571 Z" id="Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

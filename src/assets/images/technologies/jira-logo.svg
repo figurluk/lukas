@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="148px" height="148px" viewBox="0 0 148 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Jira</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="98.031%" y1="0.161%" x2="58.888%" y2="40.766%" id="linearGradient-1">
+            <stop stop-color="#0052CC" offset="18%"></stop>
+            <stop stop-color="#2684FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100.665%" y1="0.455%" x2="55.402%" y2="44.727%" id="linearGradient-2">
+            <stop stop-color="#0052CC" offset="18%"></stop>
+            <stop stop-color="#2684FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Jira" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="jira-1" transform="translate(31.000000, 41.000000)">
+            <path d="M76.455625,0 L38.0334375,0 C38.0334375,9.57903381 45.7987787,17.344375 55.3778125,17.344375 L62.455625,17.344375 L62.455625,24.178125 C62.461875,33.7484375 70.2184375,41.5053125 79.78875,41.5115625 L79.78875,3.333125 C79.78875,1.4928125 78.296875,0 76.455625,0 Z" id="Path" fill="#2684FF"></path>
+            <path d="M57.444375,19.144375 L19.0225,19.144375 C19.0284375,28.7146875 26.785,36.4715625 36.355625,36.4778125 L43.4334375,36.4778125 L43.4334375,43.3334375 C43.445625,52.90375 51.2075,60.6553125 60.7778125,60.6553125 L60.7778125,22.478125 C60.7778125,20.6371875 59.2853125,19.1446875 57.444375,19.1446875 L57.444375,19.144375 Z" id="Path" fill="url(#linearGradient-1)"></path>
+            <path d="M38.4221875,38.2778125 L0,38.2778125 C0,47.856875 7.765625,55.6221875 17.344375,55.6221875 L24.444375,55.6221875 L24.444375,62.455625 C24.450625,72.0171875 32.19375,79.770625 41.755625,79.78875 L41.755625,41.61125 C41.755625,39.7703125 40.263125,38.2778125 38.4221875,38.2778125 Z" id="Path" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>

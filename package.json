@@ -5,16 +5,25 @@
   "scripts": {
     "build": "gridsome build",
     "dev": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "gridsome": "^0.7.0",
     "gridsome-plugin-pwa": "^0.0.13"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "@vue/cli-plugin-eslint": "^4.2.3",
+    "@vue/cli-service": "^4.2.3",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-plugin-gridsome": "^1.4.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-vue": "^6.2.2",
     "gridsome-plugin-tailwindcss": "^2.2.41",
+    "prettier": "^1.19.1",
     "vue-eslint-parser": "^7.0.0"
   }
 }
