@@ -45,6 +45,7 @@
                 class="w-full md:w-2/3"
                 :class="{ 'has-error': errors.length }"
                 type="text"
+                id="email"
                 name="email"
                 placeholder="@"
                 v-model="form.email"
@@ -65,6 +66,7 @@
               <textarea
                 class="w-full md:w-2/3"
                 :class="{ 'has-error': errors.length }"
+                id="message"
                 name="message"
                 placeholder="Please place your message here"
                 v-model="form.message"
