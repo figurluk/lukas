@@ -7,31 +7,32 @@
     </div>
 
     <div class="w-full flex flex-col px-16 md:px-0">
-      <career-item>
-        <h3 class="text-xl">Donner Consulting Group</h3>
-      </career-item>
-      <career-item right>
-        <h3 class="text-xl">INNOVIS</h3>
-      </career-item>
-      <career-item>
-        <h3 class="text-xl">Web Klikem</h3>
-      </career-item>
-      <career-item right>
-        <h3 class="text-xl">E-zone technologies</h3>
-      </career-item>
+      <career-item
+        v-for="(careerEntry, index) in careerData"
+        :key="index"
+        :career-entry="careerEntry"
+        :right="index % 2 === 1"
+      />
     </div>
   </section>
 </template>
 
 <script>
 import CareerItem from './CareerItem'
+import TechnologyLabel from './TechnologyLabel'
+import career from '../config/career'
 
 export default {
   name: 'Career',
 
   components: {
+    TechnologyLabel,
     CareerItem
-  }
+  },
+
+  data: () => ({
+    careerData: career
+  })
 }
 </script>
 

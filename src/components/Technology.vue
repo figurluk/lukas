@@ -2,7 +2,7 @@
   <div class="technology__container">
     <slot />
 
-    <div class="technology__label opacity-100 md:opacity-0">{{ alt }}</div>
+    <div class="technology__label opacity-100 md:opacity-0 text-sm md:text-base">{{ alt }}</div>
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style lang="postcss" scoped>
+<style lang="postcss">
 .technology__label {
   @apply text-gray-600 text-center mt-auto;
   transition: opacity 200ms ease-in-out;
@@ -28,5 +28,10 @@ export default {
 
 .technology__container:hover .technology__label {
   @apply opacity-100;
+}
+
+img {
+  height: 80%;
+  width: auto;
 }
 </style>

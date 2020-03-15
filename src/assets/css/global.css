@@ -59,7 +59,7 @@ html {
 }
 
 .btn-primary {
-    @apply cursor-pointer uppercase text-sm bg-green-400 text-white px-8 py-3 rounded outline-none;
+    @apply cursor-pointer uppercase text-sm bg-green-400 text-white px-8 py-3 rounded outline-none leading-none;
     transition: background-color 200ms ease-in-out;
     will-change: background-color;
 }
@@ -73,7 +73,7 @@ html {
 }
 
 .btn-secondary {
-    @apply cursor-pointer uppercase text-sm border-green-500 text-green-500 border rounded-sm px-8 py-3 rounded outline-none;
+    @apply cursor-pointer uppercase text-sm border-green-500 text-green-500 border rounded-sm px-8 py-3 rounded outline-none leading-none;
     transition: background-color 200ms ease-in-out;
     will-change: background-color;
 }
