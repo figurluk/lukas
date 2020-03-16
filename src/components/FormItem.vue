@@ -2,7 +2,7 @@
   <div class="form-item">
     <label class="block text-grey-dark mb-1" :for="props.name">
       {{ props.label }}
-      <span v-if="props.required" class="text-base-500 text-xl">*</span>
+      <!--      <span v-if="props.required" class="text-base-500 text-xl">*</span>-->
     </label>
     <div>
       <slot />

@@ -3,9 +3,14 @@
  */
 html {
     @apply font-sans;
+    font-size: 18px;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-input-placeholder {
+    @apply text-sm;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -91,7 +96,7 @@ html {
 }
 
 input, textarea {
-    @apply outline-none border-gray-300 py-2 px-4 rounded-sm border text-lg;
+    @apply outline-none border-gray-300 py-2 px-4 rounded-sm border text-lg text-sm;
     transition: 150ms ease-in-out;
     will-change: border-color;
 }
@@ -107,6 +112,10 @@ textarea {
 input:focus, textarea:focus,input:active, textarea:active {
      @apply border-gray-500;
  }
+
+img {
+    @apply select-none;
+}
 
 /* FADE */
 .fade-enter-active {

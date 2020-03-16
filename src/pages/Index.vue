@@ -19,10 +19,6 @@
     <container class="bg-gray-100">
       <component :is="injections.components.Contact" />
     </container>
-
-    <container class="bg-gray-100">
-      <component :is="injections.components.Footer" />
-    </container>
   </Layout>
 </template>
 
@@ -37,14 +33,9 @@ export default {
         Banner: () => import('../components/Banner'),
         Career: () => import('../components/Career'),
         Contact: () => import('../components/Contact'),
-        Expertise: () => import('../components/Expertise'),
-        Footer: () => import('../components/Footer')
+        Expertise: () => import('../components/Expertise')
       }
     }
-  },
-
-  metaInfo: {
-    title: 'Hello, world!'
   }
 }
 </script>

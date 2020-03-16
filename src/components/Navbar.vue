@@ -9,21 +9,20 @@
     <div class="ml-auto">
       <a
         class="text-gray-600 mr-3"
+        href="/docs/CV-LukasFigura.pdf"
+        target="_blank"
+        rel="noopener"
+        aria-label="CV anchor"
+      >
+        <span class="fas fa-file" /> </a
+      ><a
+        class="text-gray-600 mr-3"
         href="https://www.linkedin.com/in/lukasfigura"
         target="_blank"
         rel="noopener"
         aria-label="Linkedin anchor"
       >
         <span class="fab fa-linkedin-in" />
-      </a>
-      <a
-        class="text-gray-600"
-        href="mailto:join@lukas.life"
-        target="_blank"
-        rel="noopener"
-        aria-label="Mail anchor"
-      >
-        <span class="fas fa-at" />
       </a>
     </div>
   </div>

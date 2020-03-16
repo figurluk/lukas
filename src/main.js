@@ -16,4 +16,44 @@ export default function(Vue, { router, head, isClient }) {
   Vue.component('ValidationObserver', ValidationObserver)
   Vue.component('Container', Container)
   Vue.component('Heading', Heading)
+  head.meta.push({ name: 'author', content: 'Lukas Figura' })
+
+  head.meta.push({
+    name: 'keywords',
+    content:
+      'nuxt,vue,javascript,laravel,go,nodejs,consultant,full-stack,engineering,lead,frontend,backend'
+  })
+
+  head.meta.push({
+    key: 'og:title',
+    name: 'og:title',
+    content: `Lukas Figura`
+  })
+
+  head.meta.push({
+    key: 'og:image',
+    name: 'og:image',
+    content: process.env.GRIDSOME_BASE_PATH + '/assets/lukas.png'
+  })
+
+  head.meta.push({
+    key: 'og:description',
+    name: 'og:description',
+    content: `Product-oriented full-stack engineering lead and technology consultant.`
+  })
+
+  head.meta.push({
+    key: 'twitter:description',
+    name: 'twitter:description',
+    content: `Product-oriented full-stack engineering lead and technology consultant.`
+  })
+
+  router.beforeEach((to, _from, next) => {
+    head.meta.push({
+      key: 'og:url',
+      name: 'og:url',
+      content: process.env.GRIDSOME_BASE_PATH + to.path
+    })
+    next()
+  })
 }

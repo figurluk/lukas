@@ -6,29 +6,28 @@
       </heading>
     </div>
     <div class="w-full md:w-1/2 text-gray-700 py-8 px-8">
-      <p class="mb-8">
+      <appear-transition class="mb-8">
         Product-oriented full-stack engineering lead and technology consultant.
-        Experience with the full software life cycle and multitude of
+        Experience with the full software life cycle and a multitude of
         programming languages, development & testing frameworks, databases,
-        operating systems and cloud solutions allow me to pick the right tech &
+        operating systems, and cloud solutions allow me to pick the right tech &
         tools for the job.
-      </p>
-      <p class="mb-8">
-        Knowledge of both the frontend & backend components of web applications
-        in all type of size from startup, to scaleup and enterprise maximize the
-        return on your digital investment.
-      </p>
-      <div class="w-full flex">
-        <a class="btn-primary mr-4" href="/#career">Career</a>
-        <a class="btn-secondary">Download CV</a>
-      </div>
+      </appear-transition>
+      <appear-transition :timeout="150" class="">
+        Knowledge of both the front-end & back-end components of web applications
+        in all types of sizes from startup to scaleup and enterprise, maximize
+        the return on your digital investment.
+      </appear-transition>
     </div>
   </section>
 </template>
 
 <script>
+import AppearTransition from './AppearTransition'
+
 export default {
-  name: 'About'
+  name: 'About',
+  components: { AppearTransition }
 }
 </script>
 

@@ -19,14 +19,12 @@
 
 <script>
 import CareerItem from './CareerItem'
-import TechnologyLabel from './TechnologyLabel'
 import career from '../config/career'
 
 export default {
   name: 'Career',
 
   components: {
-    TechnologyLabel,
     CareerItem
   },
 

@@ -196,6 +196,26 @@
           src="../assets/images/technologies/slack-logo.svg"
         />
       </technology>
+      <technology
+        class="mx-4 w-16 mb-4 h-16 lg:w-24 lg:h-24 sm:32 flex flex-col"
+        alt="SourceTree"
+      >
+        <g-image
+          class="mx-auto p-3"
+          :alt="'SourceTree logo'"
+          src="../assets/images/technologies/sourcetree.png"
+        />
+      </technology>
+      <technology
+        class="mx-4 w-16 mb-4 h-16 lg:w-24 lg:h-24 sm:32 flex flex-col"
+        alt="DigitalOcean"
+      >
+        <g-image
+          class="mx-auto p-3"
+          :alt="'DigitalOcean logo'"
+          src="../assets/images/technologies/digital-ocean.png"
+        />
+      </technology>
     </div>
 
     <heading class="text-xl my-2">Tech I've used before</heading>

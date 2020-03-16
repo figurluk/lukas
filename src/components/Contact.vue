@@ -1,8 +1,8 @@
 <template>
-  <section id="contact" class="w-full flex flex-wrap py-16 md:py-32">
+  <section id="contact" class="w-full flex flex-wrap py-16 text-sm md:py-32">
     <div class="w-full md:w-1/2 flex pl-8">
       <heading class="my-auto text-5xl" :info-char="'C'">
-        Contact Me
+        Contact
       </heading>
     </div>
     <div class="w-full md:w-1/2 text-gray-700 px-8 py-8">

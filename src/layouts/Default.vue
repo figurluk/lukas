@@ -5,11 +5,16 @@
     </header>
 
     <slot />
+
+    <container class="bg-gray-100">
+      <component :is="injections.components.Footer" />
+    </container>
   </div>
 </template>
 
 <script>
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export default {
   name: 'Default',
@@ -17,7 +22,8 @@ export default {
   inject: {
     components: {
       default: {
-        Navbar
+        Navbar,
+        Footer
       }
     }
   }

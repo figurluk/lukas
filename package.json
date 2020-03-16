@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "gridsome": "^0.7.0",
-    "gridsome-plugin-pwa": "^0.0.13",
-    "vee-validate": "^3.2.5"
+    "gridsome-plugin-pwa": "^0.0.13"
   },
   "devDependencies": {
+    "gridsome-plugin-robots": "^0.2.1",
+    "@gridsome/plugin-sitemap": "^0.2.3",
+    "vee-validate": "^3.2.5",
     "@fortawesome/fontawesome-free": "^5.12.1",
     "@vue/cli-plugin-eslint": "^4.2.3",
     "@vue/cli-service": "^4.2.3",

@@ -6,8 +6,22 @@
 
 module.exports = {
   siteName: 'Lukas Figura',
-  siteDescription: 'My career website',
+  siteUrl: 'https://lukas.life',
+  siteDescription:
+    'Product-oriented full-stack engineering lead and technology consultant.',
+  titleTemplate: 'Lukas Figura',
   plugins: [
+    {
+      use: '@gridsome/plugin-sitemap'
+    },
+    {
+      use: 'gridsome-plugin-robots',
+      options: {
+        host: 'https://lukas.life',
+        sitemap: 'https://lukas.life/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       use: 'gridsome-plugin-tailwindcss',
       options: {
@@ -31,11 +45,11 @@ module.exports = {
         serviceWorkerPath: 'service-worker.js',
         cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
         shortName: 'Lukas',
-        themeColor: '#68d391',
+        themeColor: '#ffffff',
         backgroundColor: '#ffffff',
         icon: 'src/favicon.png',
         msTileImage: '',
-        msTileColor: '#68d391'
+        msTileColor: '#ffffff'
       }
     }
   ]
