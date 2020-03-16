@@ -33,7 +33,7 @@ export default function(Vue, { router, head, isClient }) {
   head.meta.push({
     key: 'og:image',
     name: 'og:image',
-    content: process.env.GRIDSOME_BASE_PATH + '/assets/lukas.png'
+    content: 'https://lukas.life/assets/lukas.png'
   })
 
   head.meta.push({
@@ -52,7 +52,7 @@ export default function(Vue, { router, head, isClient }) {
     head.meta.push({
       key: 'og:url',
       name: 'og:url',
-      content: process.env.GRIDSOME_BASE_PATH + to.path
+      content: 'https://lukas.life' + to.path
     })
     next()
   })
