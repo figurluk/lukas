@@ -73,7 +73,7 @@
                 :class="{ 'has-error': errors.length }"
                 id="message"
                 name="message"
-                placeholder="Please place your message here"
+                placeholder="Place your message here"
                 v-model="form.message"
               />
               <small v-if="errors.length" class="text-red-400 mt-2 normal-case">
