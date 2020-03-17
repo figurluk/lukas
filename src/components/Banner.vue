@@ -1,6 +1,6 @@
 <template>
   <section id="banner" class="w-full flex relative">
-    <div class="w-full md:w-1/2 flex py-48 px-8">
+    <div class="w-full md:w-1/2 flex py-12 md:py:24 lg:py-48 px-8">
       <div class="my-auto">
         <p class="text-gray-500">Hello</p>
         <h1 class="text-6xl leading-none font-baloo mb-2">I'm Lukas</h1>
@@ -13,7 +13,7 @@
     </div>
     <div class="hidden md:block w-1/2 flex pt-8">
       <g-image
-        class="h-full max-h-128"
+        class="w-full h-auto my-auto"
         src="../assets/images/lukas.png"
         alt="Lukas image"
         quality="100"

@@ -6,7 +6,9 @@
       </heading>
     </div>
     <heading class="text-xl my-2">Tech I actively use</heading>
-    <div class="w-full flex flex-wrap text-gray-700 justify-start pb-4 px-8">
+    <div
+      class="w-full flex flex-wrap text-gray-700 justify-start pb-4 px-4 md:px-8"
+    >
       <technology
         class="mx-4 w-16 mb-4 h-16 lg:w-24 lg:h-24 sm:32 flex flex-col"
         favorite
@@ -155,7 +157,9 @@
     </div>
 
     <heading class="text-xl my-2">Tools I actively use</heading>
-    <div class="w-full flex flex-wrap text-gray-700 justify-start pb-4 px-8">
+    <div
+      class="w-full flex flex-wrap text-gray-700 justify-start pb-4 px-4 md:px-8"
+    >
       <technology
         class="mx-4 w-16 mb-4 h-16 lg:w-24 lg:h-24 sm:32 flex flex-col"
         alt="IntelIJ"
@@ -219,7 +223,9 @@
     </div>
 
     <heading class="text-xl my-2">Tech I've used before</heading>
-    <div class="w-full flex flex-wrap text-gray-700 justify-start pb-4 px-8">
+    <div
+      class="w-full flex flex-wrap text-gray-700 justify-start pb-4 px-4 md:px-8"
+    >
       <technology
         class="mx-4 w-16 mb-4 h-16 lg:w-24 lg:h-24 sm:32 flex flex-col"
         alt="Unity"

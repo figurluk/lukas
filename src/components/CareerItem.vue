@@ -16,7 +16,7 @@
       </div>
 
       <div
-        class="w-full md:w-1/2 border-dashed border-green-400 relative px-8 py-4"
+        class="w-full md:w-1/2 border-dashed border-green-400 relative pl-6 md:px-8 py-4"
         :class="{
           'border-l md:-ml-px': props.right,
           '-mr-px border-r-0 border-l md:border-l-0 md:border-r text-left md:text-right': !props.right
@@ -76,7 +76,7 @@
           :right="!props.right"
         />
       </div>
-      <div class="hidden md:block w-1/2 pl-8 pr-2 pt-4" v-if="!props.right">
+      <div class="hidden md:block w-1/2 px-8 pt-4" v-if="!props.right">
         <component
           :is="injections.components.AchievementBlock"
           :achievements="props.careerEntry.achievements"

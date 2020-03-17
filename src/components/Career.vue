@@ -6,7 +6,7 @@
       </heading>
     </div>
 
-    <div class="w-full flex flex-col px-16 md:px-0">
+    <div class="w-full flex flex-col px-8 md:px-0">
       <career-item
         v-for="(careerEntry, index) in careerData"
         :key="index"

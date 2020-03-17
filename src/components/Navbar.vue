@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex py-4 px-4 md:px-8 md:px-0">
+  <div class="w-full flex py-4 px-4 md:px-8 md:px-0 text-sm md:text-base">
     <nav class="nav">
       <g-link class="nav__link" to="/#about">About</g-link>
       <g-link class="nav__link" to="/#career">Career</g-link>
@@ -16,7 +16,7 @@
       >
         <span class="fas fa-file" /> </a
       ><a
-        class="text-gray-600 mr-3"
+        class="text-gray-600"
         href="https://www.linkedin.com/in/lukasfigura"
         target="_blank"
         rel="noopener"

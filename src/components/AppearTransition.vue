@@ -13,7 +13,7 @@ export default {
   props: {
     percentageOffset: {
       type: Number,
-      default: 0.7
+      default: 0.2
     },
     timeout: {
       type: Number,

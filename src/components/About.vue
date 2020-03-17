@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="w-full flex flex-wrap py-16 md:py-32">
+  <section id="about" class="w-full flex flex-wrap py-12 md:py:24 lg:py-32">
     <div class="w-full md:w-1/2 flex pl-8">
       <heading class="my-auto text-5xl" :info-char="'A'">
         About Me
