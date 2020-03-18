@@ -25,19 +25,6 @@
             <label> Don’t fill this out: <input name="bot-field" /> </label>
           </p>
 
-          <transition name="fade">
-            <div
-              class="w-full p-4"
-              v-if="hasMessage"
-              :class="{
-                'error-message': isErrorMsg,
-                'success-message': !isErrorMsg
-              }"
-            >
-              {{ hasMessage }}
-            </div>
-          </transition>
-
           <form-item name="email" required label="Email">
             <ValidationProvider
               tag="div"
@@ -83,6 +70,18 @@
           </form-item>
 
           <button class="btn-primary" type="submit">Submit</button>
+          <transition name="fade">
+            <div
+              class="w-full py-4"
+              v-if="hasMessage"
+              :class="{
+                'error-message': isErrorMsg,
+                'success-message': !isErrorMsg
+              }"
+            >
+              {{ hasMessage }}
+            </div>
+          </transition>
         </form>
       </ValidationObserver>
     </div>
@@ -99,8 +98,9 @@ export default {
   data: () => ({
     formName: 'contact-form',
     hasMessage: null,
-    successMessage: '',
-    errorMessage: '',
+    successMessage: 'Thank you. I will answer you soon.',
+    errorMessage:
+      'Oh! Some bug is here. Please try again or contact me on LinkedIn.',
     form: {
       email: null,
       message: null
@@ -132,10 +132,14 @@ export default {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encode({
           'form-name': this.formName,
-          ...this.formData
+          ...this.form
         })
       })
         .then(() => {
+          this.form = {
+            email: null,
+            message: null
+          }
           this.hasMessage = this.successMessage
         })
         .catch(() => {
@@ -146,4 +150,11 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style lang="postcss" scoped>
+.success-message {
+  @apply text-green-500;
+}
+.error-message {
+  @apply text-red-500;
+}
+</style>
