@@ -18,6 +18,19 @@ export default function(Vue, { router, head, isClient }) {
   Vue.component('Heading', Heading)
   head.meta.push({ name: 'author', content: 'Lukas Figura' })
 
+  head.script.push({
+    innerHTML:
+      '(function(h,o,t,j,a,r){' +
+      '    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};' +
+      '    h._hjSettings={hjid:1734098,hjsv:6};' +
+      "    a=o.getElementsByTagName('head')[0];" +
+      "    r=o.createElement('script');r.async=1;" +
+      '    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;' +
+      '    a.appendChild(r);' +
+      "  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');",
+    __dangerouslyDisableSanitizers: ['script']
+  })
+
   head.meta.push({
     name: 'keywords',
     content:
