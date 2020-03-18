@@ -140,6 +140,7 @@ export default {
             email: null,
             message: null
           }
+          this.$refs.observer.reset()
           this.hasMessage = this.successMessage
         })
         .catch(() => {
