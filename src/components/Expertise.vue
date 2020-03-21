@@ -162,11 +162,11 @@
     >
       <technology
         class="mx-4 w-16 mb-4 h-16 lg:w-24 lg:h-24 sm:32 flex flex-col"
-        alt="IntelIJ"
+        alt="IntelliJ"
       >
         <g-image
           class="mx-auto p-4"
-          :alt="'IntelIJ logo'"
+          :alt="'IntelliJ logo'"
           src="../assets/images/technologies/intellij.png"
         />
       </technology>
