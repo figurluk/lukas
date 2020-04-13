@@ -98,7 +98,7 @@ export default [
     location: 'Prague, Czech republic',
     entries: [
       {
-        period: 'May 2016 - Mar 2019',
+        period: 'May 2016 - May 2018',
         position: 'Laravel Engineer',
         tech: ['Laravel', 'jQuery', 'PostgreSQL']
       }
@@ -113,7 +113,7 @@ export default [
     location: 'Prague, Czech republic',
     entries: [
       {
-        period: 'Jun 2015 - May 2018',
+        period: 'Jun 2015 - Mar 2019',
         position: 'Laravel developer',
         tech: ['Laravel', 'Nette', 'jQuery', 'PostgreSQL']
       }
